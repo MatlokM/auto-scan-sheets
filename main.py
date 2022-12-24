@@ -1,5 +1,3 @@
-import os
-import sys
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
@@ -7,17 +5,6 @@ from selenium.webdriver.common.by import By
 import PySimpleGUI as sg
 import time
 import SheetToList
-
-
-def resource_path(relative_path: str) -> str:
-    try:
-        base_path = sys._MEIPASS
-
-    except Exception:
-        base_path = os.path.dirname(__file__)
-
-    return os.path.join(base_path, relative_path)
-
 
 # Variables to Change
 #ENTRYID = "article"
